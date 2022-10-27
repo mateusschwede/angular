@@ -1,0 +1,9 @@
+<p *ngIf="ubsocial">Mostrar conteúdo</p>
+<p *ngIf="ubsocial2">Mostrar conteúdo 2</p>
+
+<p *ngIf="name === 'ubsocial'">Nome UB Social</p>
+
+<p *ngIf="ubsocial2 === true; else nameNotFound">Mostrar conteúdo 2</p>
+<ng-template #nameNotFound>
+    <p>Nome não encontrado</p>
+</ng-template>

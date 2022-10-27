@@ -1,0 +1,6 @@
+<h3>Two way data biding:</h3>
+<form>
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Nome">
+    <input type="submit" value="Enviar">
+</form>
+<p *ngIf="name !== ''">O nome é {{ name }}</p>
