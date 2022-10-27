@@ -1,9 +1,3 @@
 {
-    "animals": [
-        {"id": 1, "name": "Panda", "type": "Bear", "age": 2},
-        {"id": 2, "name": "Olivia", "type": "Cat", "age": 4},
-        {"id": 3, "name": "Bob", "type": "Dog", "age": 1},
-        {"id": 4, "name": "Xing Ling", "type": "Parrow", "age": 3},
-        {"id": 5, "name": "Luna", "type": "Dog", "age": 8}
-    ]
+  "animals": []
 }
