@@ -4,6 +4,7 @@
         Nome: {{animal.name}}
         Tipo: {{animal.type}}
         <button (click)="showAge(animal)">Show age</button>
+        <a routerLink="/list/{{ animal.id }}">Visualizar</a>
         <button (click)="removeAnimal(animal)">Excluir</button>
     </li>
     <i>{{ animalDetails }}</i>
