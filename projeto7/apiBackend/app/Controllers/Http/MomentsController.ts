@@ -1,7 +1,6 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Moment from 'App/Models/Moment'
 import Application from '@ioc:Adonis/Core/Application'
-
 import { v4 as uuidv4 } from 'uuid'
 
 export default class MomentsController {
@@ -12,7 +11,6 @@ export default class MomentsController {
 
   public async store({ request, response }: HttpContextContract) {
     const body = request.body()
-
     const image = request.file('image', this.validationOptions)
 
     if (image) {
