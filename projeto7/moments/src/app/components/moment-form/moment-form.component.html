@@ -19,7 +19,7 @@
     
     <div class="form-group">
         <label for="image">Imagem:</label>
-        <input type="file">
+        <input type="file" (change)="onFileSelected($event)">
     </div>
     
     <input type="submit" value="{{ btnText }}">
