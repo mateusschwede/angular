@@ -19,6 +19,12 @@ export class MomentService {
     return this.http.get<Response<Moment[]>>(this.apiUrl);
   }
 
+  getMoment(id: number): Observable<Response<Moment>> {
+    // Pegará dado específico da API Backend
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Response<Moment>>(url);
+  }
+
   createMoment(formData: FormData): Observable<FormData> {
     // Enviará dados para API Backend
     return this.http.post<FormData>(this.apiUrl, formData);
