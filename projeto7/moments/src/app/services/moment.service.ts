@@ -8,6 +8,7 @@ import { Response } from '../Response';
 @Injectable({
   providedIn: 'root'
 })
+
 export class MomentService {
   private baseApiUrl = environment.apiBaseUrl;
   private apiUrl = `${this.baseApiUrl}api/moments`;
@@ -29,4 +30,11 @@ export class MomentService {
     // Enviará dados para API Backend
     return this.http.post<FormData>(this.apiUrl, formData);
   }
+
+  removeMoment(id: number) {
+    // Removerá dados da API Backend
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.delete(url);
+  }
+
 }
