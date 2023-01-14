@@ -33,7 +33,7 @@ export class NewMomentComponent implements OnInit {
       formData.append("image", moment.image);
     }
 
-    await this.momentService.createMoment(formData).subscribe();
+    (await this.momentService.createMoment(formData)).subscribe();
 
     this.messageService.add("Momento adicionado com sucesso!"); // Implementa conteúdo na mensagem de feedback
     

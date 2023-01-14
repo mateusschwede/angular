@@ -37,4 +37,10 @@ export class MomentService {
     return this.http.delete(url);
   }
 
+  updateMoment(id: number, formData: FormData): Observable<FormData> {
+    // Atualizará dados da API Backend
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.put<FormData>(url, formData);
+  }
+
 }
